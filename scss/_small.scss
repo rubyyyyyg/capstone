@@ -30,7 +30,8 @@ header {
     padding: .5rem $gutter;
     span {
         font-size: 1.6rem;
-        font-weight: $lightWeight;
+        font-family: "Texturina", serif;
+        font-weight: 100;
         color: $primaryColor;
     }
 } // end header
