@@ -210,6 +210,7 @@ footer {
 #fParent {
     display: grid;
     grid-template-columns: 1fr; 
+    align-items: center;
    
     .fCard address {
         padding-left: 10px;
