@@ -3,4 +3,62 @@ header, nav, main {
     margin: auto;
 }
 
+
+
 /* NAVIGATION STUFF GOES HERE  */
+#hamburgerBtn {display: none;}
+
+#primaryNav {display: flex;}
+nav {
+   
+    ul li a {
+        border: none;
+        font-size: .85rem;
+        font-weight: $normalWeight;
+        padding: .5rem 1.2rem;
+        transition: background .5s linear;
+    }
+    ul li a:hover {
+        background-color: $primaryColor;
+        color: white;
+    }
+}
+
+nav ul, nav ul.open {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    position: static;
+    border: none;
+    box-shadow: none;
+    li a {
+        padding: .4rem 1rem;
+    }
+    a:hover {
+        text-decoration: underline 4px $accentColor;
+    }
+}
+
+.hero div {
+    bottom: 20px;
+    top: auto;
+    right: 5%;
+    left: 5%;
+}
+
+.card-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+#clients {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+   
+}
+
+#fParent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 10px;
+}

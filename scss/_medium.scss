@@ -1,1 +1,56 @@
 /* NAVIGATION STUFF GOES HERE  */
+
+nav ul {
+    position: absolute;
+    right: $gutter;
+    width: 500px;
+    background-color: #fff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #aaa;
+    text-align: right;
+    display: none;
+    li a {
+        color: $primaryColor;
+        display: block;
+        padding: .75rem $gutter;
+        text-decoration: none;
+    }
+    li.active a {
+        background-color: $accentColor;
+        color: white;
+        font-weight: $normalWeight;
+    }
+}
+
+nav ul.open {
+    display: block;
+}
+
+.hero div {
+    left: 0;
+    right: 40%;
+    h3 {
+    text-align: start;
+}
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#clients {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 20px;
+   
+}
+
+#fParent {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
