@@ -326,7 +326,7 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 50px auto;
+  grid-template-columns: 50px auto 44px;
   column-gap: 10px;
   align-items: center;
   padding: 0.5rem 10px;
@@ -339,6 +339,63 @@ header span {
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+#hamburgerBtn {
+  position: relative;
+  height: 44px;
+  width: 44px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+#hamburgerBtn .top, #hamburgerBtn .bottom {
+  position: absolute;
+  height: 2px;
+  width: 50%;
+  left: 25%;
+  background-color: #777;
+  transition: all 0.3s ease;
+}
+#hamburgerBtn .top {
+  top: 33%;
+}
+#hamburgerBtn .bottom {
+  top: 62%;
+}
+
+#hamburgerBtn.open .top {
+  transform: rotate(45deg);
+  top: 48%;
+  width: 60%;
+  left: 20%;
+}
+#hamburgerBtn.open .bottom {
+  transform: rotate(-45deg);
+  top: 48%;
+  width: 60%;
+  left: 20%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+nav ul li a {
+  color: #1d295f;
+  display: block;
+  padding: 0.75rem 10px;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+nav ul li.active a {
+  color: #7c1d47;
+}
+
+nav ul.open {
+  display: block;
+}
+
 /* --------------------------- MAIN --------------------------- */
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
@@ -350,6 +407,34 @@ main p {
   padding: 0.5rem 10px;
   color: #333;
   line-height: 150%;
+}
+
+.hero {
+  position: relative;
+}
+.hero div {
+  position: absolute;
+  top: 0;
+  color: white;
+  left: 0;
+  right: 0;
+  padding: 0 5px;
+  margin: 0;
+  background: linear-gradient(90deg, rgb(81, 41, 41) 0%, rgba(72, 38, 38, 0.464) 20%);
+}
+.hero div h3 {
+  text-shadow: 0 0 2px gray;
+}
+.hero div p {
+  text-shadow: 0 0 2px gray;
+  color: white;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.hero video {
+  width: 100%;
+  height: auto;
 }
 
 /* --------------------------- FOOTER --------------------------- */
